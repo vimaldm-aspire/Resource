@@ -1,0 +1,12 @@
+$a = '1'; 
+$b = &$a; 
+$b = "2$b";
+echo $a.", ".$b; 
+
+Output: 21, 21
+
+Explanation: 
+$b = &$a;   // $b = 1, b point the same memory that a points.
+$b = "2$b"; // $b = 21, this line meant the the value of $b should always followed by '2' and so output is "21".
+
+so when we change the value of $b then the $a value will also change to $b value. Because both $a and $b reference the same memory point.

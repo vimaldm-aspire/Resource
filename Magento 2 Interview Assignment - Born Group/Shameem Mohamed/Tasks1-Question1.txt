@@ -1,0 +1,13 @@
+Question1:
+<?php
+$a = '1';
+$b = &$a;
+$b = "2$b";
+echo $a.", ".$b;
+?>
+The OUTPUT is 21, 21.
+Variable $a and assigns the value ‘1’  
+Variable $b which points to the value of $a as 1
+Next $b declare a value of 1
+
+$a will be the same value, both refers same output  => $b = &$a;

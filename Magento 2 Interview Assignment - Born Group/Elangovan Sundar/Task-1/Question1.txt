@@ -1,0 +1,12 @@
+1.What is the output of the following code and explain why:
+
+$a = '1';
+$b = &$a;
+$b = "2$b";
+echo $a.", ".$b;
+
+
+Anaswers:
+
+21,21
+@Here We used "&" operator [it is like pointer operator like c], a reference to where $a is pointing is stored in $b. So $b is actually a reference to $a.
